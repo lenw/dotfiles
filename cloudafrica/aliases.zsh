@@ -1,0 +1,1 @@
+alias instances="sdc-listmachines"

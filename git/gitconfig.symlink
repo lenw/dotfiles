@@ -5,8 +5,8 @@
 [hub]
         protocol = https
 [user]
-        name = Zach Holman
-        email = zach@zachholman.com
+        name = Len Weincier 
+        email = len@cloudafrica.net
 [credential]
         helper = osxkeychain
 [alias]
