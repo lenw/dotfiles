@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# Quick shortcut to mvim
+#
+# USAGE:
+#
+#   $ m
+#   # => opens the current directory in your editor
+#
+#   $ m .
+#   $ m /usr/local
+#   # => opens the specified directory in your editor
+
+if test "$1" == ""
+then
+  exec mvim .
+else
+  exec mvim "$1"
+fi
