@@ -1,4 +1,4 @@
-set bg=dark
+set bg=light
 colorscheme solarized
 set noswapfile
 
