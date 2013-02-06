@@ -1,0 +1,55 @@
+# Sample gitconfig
+#
+
+[hub]
+        protocol = https
+[user]
+<<<<<<< HEAD:git/gitconfig.symlink
+	name = Len Weincier
+	email = len@cloudafrica.net
+[credential]
+=======
+        name = AUTHORNAME
+        email = AUTHOREMAIL
+>>>>>>> ba34d9e7fb5130afa2ecd6d3b904e66c4348b07c:git/gitconfig.symlink.example
+        helper = osxkeychain
+[alias]
+        co = checkout
+        promote = !$ZSH/bin/git-promote
+        wtf     = !$ZSH/bin/git-wtf
+        rank-contributers = !$ZSH/bin/git-rank-contributers
+        count   = !git shortlog -sn
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+	excludesfile = /Users/len/.gitignore
+        editor = vim
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[help]
+        autocorrect = 1
+<<<<<<< HEAD:git/gitconfig.symlink
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[github]
+	user = lenw
+=======
+[push]
+        # See `git help config` (search for push.default)
+        # for more information on different options of the below setting.
+        #
+        # Setting to git 2.0 default to surpress warning message
+        default = simple
+>>>>>>> ba34d9e7fb5130afa2ecd6d3b904e66c4348b07c:git/gitconfig.symlink.example
